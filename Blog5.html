@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDiary | Post</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container" id="navbar">
+            <a href="./index.html">
+                <h2 class="logo">TechDiary</h2>
+            </a>
+            <!-- <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signin.html" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signup.html" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="list list-right">
+                <div class="icon-box place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </div>
+
+                <div class="icon-box place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </div>
+
+                <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </div>
+
+                <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>Sign up</span>
+                </a> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <button class="btn form-btn icon-box" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+
+    <section class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">What are smart contracts ? How you can write one ?</h3>
+                <div class="article-data">
+                    <span>Dec 16th 2022</span>
+                    <span class="article-data-spacer"></span>
+                    <span>4 Min read</span>
+                </div>
+                <img src="./assets/images/featured/featured-1.jpg" alt="Smart Contracts">
+            </div>
+
+            <div class="container">
+                <p>
+                  Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. These contracts are stored on a blockchain network and are automatically executed when the conditions specified in the code are met.
+                  <p>
+                    Smart contracts can be written in various programming languages, including Solidity (for Ethereum), Chaincode (for Hyperledger Fabric), and others. The specific code will depend on the programming language and blockchain platform being used.
+                  </p>
+
+
+                </p>
+
+                <p>
+                <p>
+                    <b>Here is an example of a simple smart contract written in Solidity for Ethereum: </b>
+                </p>
+
+Blockchain operates on a distributed network of nodes, where each node has a copy of the entire ledger. When a transaction is made, it is verified by multiple nodes and added as a block to the existing chain of blocks, hence the name "blockchain". This process ensures that all nodes have a consensus on the state of the ledger, and that the ledger remains secure and unalterable.
+
+                </p>
+
+                <blockquote class="quote">
+                    <p><span><i class="ri-double-quotes-l"></i></span> <p>
+                      contract SimpleSmartContract {
+                    </p>
+    <p>
+      uint public storedData;
+    </p>
+
+    <p>
+      <p>
+        function set(uint x) public {
+      </p>
+          <p>
+            &nbsp storedData = x;
+          </p>
+    <p>
+        }
+    </p>
+    </p>
+
+    <p>
+      <p>
+          function get() public view returns (uint) {
+      </p>
+          <p>
+             &nbsp return storedData;
+          </p>
+      <p>
+        }
+      </p>
+    </p>
+}
+  <span><i class="ri-double-quotes-r"></i></span></p>
+                </blockquote>
+
+
+
+<p>
+  This contract allows for data to be stored on the Ethereum blockchain and for the stored data to be retrieved. The set function allows for the <b>storedData</b> variable to be updated, while the get function provides a way to retrieve the current value of <b>storedData</b>.
+</p>
+<p>
+Smart contracts can be used in a variety of applications, including financial transactions, property ownership transfers, voting systems, and more. Because they are stored on a blockchain network, they are transparent, secure, and tamper-proof. Additionally, because the terms of the agreement are encoded in the code, smart contracts ensure that the terms of the agreement are followed automatically and without the need for trust or human intervention.
+
+</p>
+<p>
+  When writing smart contracts, it is important to consider factors such as security, scalability, and compatibility with other technologies and platforms. Additionally, smart contract code is often open source and publicly accessible, so it is important to ensure that the code is well-written, secure, and free of vulnerabilities that could be exploited by malicious actors.
+</p>
+                </p>
+
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./assets/images/author.jpg" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">Jay</h3>
+                        <p>Guy with a passion for breaking down complex ideas into simple, digestible pieces.  Get ready to expand your technical horizons with Jay.</p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">TechDiary</h2>
+                </a>
+                <p class="company-description">TechDiary provides comprehensive and informative articles on the latest advancements in various fields of technology. From programming languages to cutting-edge hardware, our team of expert writers deliver engaging and insightful content to enhance your understanding of the tech world. Stay updated with the newest trends and developments, and dive deeper into complex technical concepts, all in one convenient place.</p>
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-pinterest-line"></i></a>
+                    </li>
+                </ul>
+                <span class="copyright-notice">&copy;2023 TechDiary. All rights reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Web3 </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">AI/ML</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">System Design</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">NLP</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Startups</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Elements</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Tags</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Company</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">F.A.Q</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Careers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Memberships</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

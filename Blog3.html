@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDiary | Post</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container" id="navbar">
+            <a href="./index.html">
+                <h2 class="logo">TechDiary</h2>
+            </a>
+            <!-- <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signin.html" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signup.html" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="list list-right">
+                <div class="icon-box place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </div>
+
+                <div class="icon-box place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </div>
+
+                <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </div>
+
+                <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>Sign up</span>
+                </a> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <button class="btn form-btn icon-box" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+
+    <section class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">Optimization Algorithms in Artificial Intelligence: An Overview</h3>
+                <div class="article-data">
+                    <span>Jan 16th 2023</span>
+                    <span class="article-data-spacer"></span>
+                    <span>5 Min read</span>
+                </div>
+                <img src="./assets/images/featured/featured-1.jpg" alt="">
+            </div>
+
+            <div class="container">
+                <p>
+                  Optimization algorithms play a crucial role in the field of Artificial Intelligence (AI). They are used to find the best solution to a problem by searching through a large number of possibilities and selecting the one that results in the highest performance. These algorithms are an essential component of many AI models, including deep learning models, reinforcement learning, and other machine learning algorithms. In this article, we will provide an overview of some of the most widely used optimization algorithms in AI.
+
+
+                </p>
+
+                <p>
+
+
+<p>
+  <b>Gradient Descent</b>
+</p>
+<p>
+  Gradient Descent is one of the most basic and widely used optimization algorithms in AI. It is a first-order optimization algorithm that uses the gradient of a loss function to update the model parameters. The gradient represents the slope of the loss function and provides information about the direction in which the model parameters need to be updated to minimize the loss.
+</p>
+                </p>
+                <p>
+
+
+<p>
+  <b>Stochastic Gradient Descent (SGD)</b>
+</p>
+<p>
+  Stochastic Gradient Descent (SGD) is an extension of the gradient descent algorithm. Unlike gradient descent, which updates the model parameters based on the average of the gradients over the entire training dataset, SGD updates the parameters based on the gradient of a single training example. This makes SGD much faster than gradient descent, but also results in more noise and instability in the optimization process.
+</p>
+                </p>
+                <blockquote class="quote">
+                    <p><span><i class="ri-double-quotes-l"></i></span> Use of correct optimization algorithms can improve performance significantly. <span><i class="ri-double-quotes-r"></i></span></p>
+                </blockquote>
+
+                <p>
+
+
+<p>
+  <b>Momentum</b>
+</p>
+<p>
+Momentum is an optimization algorithm that combines the benefits of gradient descent and SGD. It uses a moving average of the gradients to reduce the noise and instability of SGD while still retaining its speed. Momentum also helps to overcome the issue of getting stuck in local minima, as it maintains some momentum in the direction of the previous updates, making it more likely to escape from these local minima.
+</p>
+                </p>
+                <p>
+
+
+<p>
+  <b>AdaGrad</b>
+</p>
+<p>
+  AdaGrad is an optimization algorithm that adapts the learning rate for each model parameter based on its historical gradient information. This allows AdaGrad to effectively balance the trade-off between exploration and exploitation, as it increases the learning rate for less important parameters and decreases it for more important parameters. This helps to ensure that the model converges to a good solution without getting stuck in a suboptimal solution.
+</p>
+                </p>
+                <p>
+
+
+<p>
+  <b>RMSProp</b>
+</p>
+<p>
+RMSProp is an optimization algorithm that is similar to AdaGrad, but with some modifications to address some of its limitations. RMSProp uses a moving average of the squared gradients to determine the adaptive learning rate, which provides a more stable and consistent estimate of the historical gradient information. This results in faster convergence and better performance compared to AdaGrad.
+</p>
+                </p>
+                <p>
+
+
+<p>
+  <b>Adam</b>
+</p>
+<p>
+  Adam (Adaptive Moment Estimation) is an optimization algorithm that combines the benefits of Momentum, AdaGrad, and RMSProp. It uses a moving average of the gradients and squared gradients to determine the adaptive learning rate, providing a balance between exploration and exploitation. This results in fast convergence and improved performance compared to other optimization algorithms.
+</p>
+                </p>
+<p>
+  Optimization algorithms play a crucial role in the field of AI, as they are used to find the best solution to a problem by searching through a large number of possibilities. The optimization algorithms discussed in this article are some of the most widely used algorithms in AI, each with its own strengths and weaknesses. The choice of optimization algorithm will depend on the specific requirements of the problem, the size of the dataset, and the computational resources available.
+</p>
+                </p>
+
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./assets/images/author.jpg" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">Jay</h3>
+                        <p>Hey There ! I have passion a for breaking down complex ideas into simple, digestible pieces.  Get ready to expand your technical horizons with me.</p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="./index.html">
+                    <h2 class="logo">TechDiary</h2>
+                </a>
+                <p class="company-description">TechDiary provides comprehensive and informative articles on the latest advancements in various fields of technology. From programming languages to cutting-edge hardware, our team of expert writers deliver engaging and insightful content to enhance your understanding of the tech world. Stay updated with the newest trends and developments, and dive deeper into complex technical concepts, all in one convenient place.</p>
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-pinterest-line"></i></a>
+                    </li>
+                </ul>
+                <span class="copyright-notice">&copy;2023 TechDiary. All rights reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Web3 </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">AI/ML</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">System Design</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">NLP</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Startups</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Elements</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Tags</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Company</h6>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">F.A.Q</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Careers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Memberships</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
